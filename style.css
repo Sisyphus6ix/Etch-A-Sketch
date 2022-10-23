@@ -1,17 +1,36 @@
 :root {
     --grid-cols: 1;
     --grid-rows: 1;
-  }
-  
-  #container {
+}
+
+body {
+    background-color: #034666;
+}  
+
+#container-wrapper {
+    height: 75vw;
+    width: 75vw;
+    max-height: var(--grid-rows);
+    max-width: var(--grid-cols);
+    margin: 30px auto;
+    position: relative;
+}
+
+#container {
     display: grid;
-    grid-gap: 1em;
+    width: 100%;
+    height: 100%;
+    position: absolute;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
-  }
+}
   
-  .grid-item {
+.grid-item {
     padding: 1em;
     border: 1px solid #ddd;
-    text-align: center;
-  }
+    background-color: white;
+}
+
+.grid-item:hover {
+    background-color: blue;
+} 
