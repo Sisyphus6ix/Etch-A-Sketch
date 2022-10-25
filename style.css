@@ -8,19 +8,18 @@ body {
 }  
 
 #container-wrapper {
-    height: 75vw;
-    width: 75vw;
+    margin: 20px auto auto auto;
+    height: 600px;
+    width: 850px;
     max-height: var(--grid-rows);
     max-width: var(--grid-cols);
-    margin: 30px auto;
     position: relative;
 }
 
 #container {
     display: grid;
-    width: 100%;
-    height: 100%;
-    position: absolute;
+    height: 800px;
+    width: auto;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
 }
