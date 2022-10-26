@@ -18,8 +18,8 @@ let colorGrid = document.getElementsByClassName('grid-item')
 
 // Because each grid grabbed with getElementsByClassName() are an HTMLCollection (or a NodeList), which is like an array.
 // I Loop through each of them and add a function to change the background of whatever div a mouse hovers over
-for (const colorGrids of colorGrid){
-  colorGrids.addEventListener('mouseover', function changeColor(){
-    colorGrids.style.backgroundColor = 'black'
+for (const grids of colorGrid){
+  grids.addEventListener('mouseover', function changeColor(){
+    grids.style.backgroundColor = 'black'
   })
 }

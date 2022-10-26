@@ -4,6 +4,7 @@
 }
 
 body {
+    font-family: fantasy;
     background-color: #034666;
     margin: 0;
     width: 100%;
@@ -31,4 +32,33 @@ body {
     padding: 1em;
     border: 1px solid #ddd;
     background-color: white;
+}
+
+.settings {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;   
+}
+
+input[type='color'] {
+    -webkit-appearance: none;
+    width: 80px;
+    height: 80px;
+    border: none;
+}
+
+button, input {
+    width: 10rem;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+  }
+
+button {
+    padding: 8px;
 }
