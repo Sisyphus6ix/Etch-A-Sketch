@@ -1,3 +1,4 @@
+// Creating the 16 by 16 grid
 const grid = document.getElementById('container')
 
 function makeRows(rows, cols) {
@@ -11,3 +12,14 @@ function makeRows(rows, cols) {
   };
   
   makeRows(16, 16);
+
+// Setting each grid in my container to this variable
+let colorGrid = document.getElementsByClassName('grid-item')
+
+// Because each grid grabbed with getElementsByClassName() are an HTMLCollection (or a NodeList), which is like an array.
+// I Loop through each of them and add a function to change the background of whatever div a mouse hovers over
+for (const colorGrids of colorGrid){
+  colorGrids.addEventListener('mouseover', function changeColor(){
+    colorGrids.style.backgroundColor = 'black'
+  })
+}

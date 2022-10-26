@@ -29,7 +29,3 @@ body {
     border: 1px solid #ddd;
     background-color: white;
 }
-
-.grid-item:hover {
-    background-color: blue;
-} 
