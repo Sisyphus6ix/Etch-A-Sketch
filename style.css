@@ -3,25 +3,25 @@
     --grid-rows: 1;
 }
 
-body {
+body { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: fantasy;
     background-color: #034666;
     margin: 0;
-    width: 100%;
-    height: 100%;
 }  
 
 #container-wrapper {
-    height: 100%;
-    width: 100%;
-    max-height: var(--grid-rows);
-    max-width: var(--grid-cols);
+    height: var(--grid-rows);
+    /* max-height: 575px; */
+    width: var(--grid-cols);
+    /* max-width: 575px; */
 }
 
 #container {
     display: grid;
-    height: 50rem;
-    width: 50rem;
     margin-left: auto;
     margin-right: auto;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
