@@ -15,13 +15,13 @@ body {
 
 #container-wrapper {
     height: var(--grid-rows);
-    /* max-height: 575px; */
     width: var(--grid-cols);
-    /* max-width: 575px; */
 }
 
 #container {
     display: grid;
+    height: 575px;
+    width: 575px;
     margin-left: auto;
     margin-right: auto;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
@@ -29,7 +29,6 @@ body {
 }
   
 .grid-item {
-    padding: 1em;
     border: 1px solid #ddd;
     background-color: white;
 }
