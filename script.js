@@ -45,7 +45,7 @@ for (const grids of colorGrid){
 gridSizeNumber.innerHTML = `${gridSize.value} by ${gridSize.value}`;
 
 // Function for changing the size of my grid and adding the mouse the ability to color the grid
-gridSize.addEventListener('click', function() {
+gridSize.addEventListener('input', function() {
   gridSizeNumber.innerHTML = `${gridSize.value} by ${gridSize.value}`;
   deleteGrid()
   makeRows(`${gridSize.value}`, `${gridSize.value}`)
